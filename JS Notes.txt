@@ -1,4 +1,4 @@
-Variables can be assigned to functions
+## Variables can be assigned to functions
 
 E.g:
 
@@ -9,7 +9,7 @@ var name = function(){
 }
 
 
-Constructors 
+## Constructors 
 ----------------------
 function Person(firstName, lastName, age, eyeColor) {
   this.firstName = firstName; 
@@ -20,3 +20,23 @@ function Person(firstName, lastName, age, eyeColor) {
     this.lastName = name;
   };
 } 
+
+## MongoDB w/ Nodejs
+
+- can insert an object straight into the db 
+- make sure to always check for err!
+
+`var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/";
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("mydb");
+  var myobj = { name: "Company Inc", address: "Highway 37" };
+  dbo.collection("customers").insertOne(myobj, function(err, res) {
+    if (err) throw err;
+    console.log("1 document inserted");
+    db.close();
+  });
+});
+`
