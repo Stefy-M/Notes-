@@ -1,13 +1,15 @@
 ## Variables can be assigned to functions
 
+
 E.g:
 
+```javascript
 var name = function(){
 
 	return ...
 
 }
-
+```
 
 ## Constructors 
 ----------------------
@@ -26,7 +28,8 @@ function Person(firstName, lastName, age, eyeColor) {
 - can insert an object straight into the db 
 - make sure to always check for err!
 
-`var MongoClient = require('mongodb').MongoClient;
+```javascript
+var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
 
 MongoClient.connect(url, function(err, db) {
@@ -39,4 +42,4 @@ MongoClient.connect(url, function(err, db) {
     db.close();
   });
 });
-`
+```
