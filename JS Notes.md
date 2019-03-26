@@ -1,4 +1,6 @@
-## Variables can be assigned to functions
+## Variables 
+
+-can be assigned to functions
 
 
 E.g:
@@ -10,6 +12,8 @@ var name = function(){
 
 }
 ```
+
+
 
 ## Constructors 
 ----------------------
@@ -44,4 +48,28 @@ MongoClient.connect(url, function(err, db) {
     db.close();
   });
 });
+```
+
+## Functions
+
+-Functions can be tested using function(err,res)
+E.g
+
+```javascript
+player.find(p).toArray(function(err,res))
+
+player.Add(newPlayer, function(err,res))
+```
+
+
+## Misc
+
+-Can create a query that parses an object to find all of its keys 
+
+```javascript
+query = "SELECT * from speedgolfdb.courses WHERE ";
+        for (const prop in testCourse) {
+            query += prop + " = '" + testCourse[prop] + "' AND ";
+        }
+        query = query.substr(0,query.length-5);
 ```
