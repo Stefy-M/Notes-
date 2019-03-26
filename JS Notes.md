@@ -13,6 +13,7 @@ var name = function(){
 
 ## Constructors 
 ----------------------
+```javascript
 function Person(firstName, lastName, age, eyeColor) {
   this.firstName = firstName; 
   this.lastName = lastName;
@@ -22,6 +23,7 @@ function Person(firstName, lastName, age, eyeColor) {
     this.lastName = name;
   };
 } 
+```
 
 ## MongoDB w/ Nodejs
 
