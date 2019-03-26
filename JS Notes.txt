@@ -1,0 +1,22 @@
+Variables can be assigned to functions
+
+E.g:
+
+var name = function(){
+
+	return ...
+
+}
+
+
+Constructors 
+----------------------
+function Person(firstName, lastName, age, eyeColor) {
+  this.firstName = firstName; 
+  this.lastName = lastName;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  this.changeName = function (name) {
+    this.lastName = name;
+  };
+} 
