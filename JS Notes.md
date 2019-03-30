@@ -1,6 +1,6 @@
 ## Variables 
 
--can be assigned to functions
+- Can be assigned to functions
 
 
 E.g:
@@ -31,8 +31,8 @@ function Person(firstName, lastName, age, eyeColor) {
 
 ## MongoDB w/ Nodejs
 
-- can insert an object straight into the db 
-- make sure to always check for err!
+- Can insert an object straight into the db 
+- Make sure to always check for err!
 
 ```javascript
 var MongoClient = require('mongodb').MongoClient;
@@ -52,7 +52,7 @@ MongoClient.connect(url, function(err, db) {
 
 ## Functions
 
--Functions can be tested using function(err,res)
+- Functions can be tested using function(err,res)
 E.g
 
 ```javascript
@@ -64,7 +64,7 @@ player.Add(newPlayer, function(err,res))
 
 ## Misc
 
--Can create a query that parses an object to find all of its keys 
+- Can create a query that parses an object to find all of its keys 
 
 ```javascript
 query = "SELECT * from speedgolfdb.courses WHERE ";
