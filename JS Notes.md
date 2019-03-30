@@ -76,4 +76,4 @@ query = "SELECT * from speedgolfdb.courses WHERE ";
 
 - Route-Controller-Models Diagram
 
-![Image of route-controller-model diagram] (https://cdn-images-1.medium.com/max/1600/1*6naFm6YY5vYr1xxDz2qdzA.png)
+![Image of route-controller-model diagram](https://cdn-images-1.medium.com/max/1600/1*6naFm6YY5vYr1xxDz2qdzA.png)
