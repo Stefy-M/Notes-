@@ -96,3 +96,5 @@ query = "SELECT * from speedgolfdb.courses WHERE ";
     
     })
  ```
+ - HTML/CSS Navigation Bar on multiple pages
+ 	- https://stackoverflow.com/questions/31954089/html-css-navigation-bar-on-multiple-pages
